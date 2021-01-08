@@ -1,0 +1,151 @@
+@media all and (max-width :1093px){
+	.subscribe-btn {
+		width: 50%;
+		margin: 20px auto;
+	}
+}
+
+@media all and (max-width :955px){
+	.header-section {
+		height: 650px;
+	}
+	
+	.menu ul li a .logo {
+		display:none;
+		padding:0px;
+	}
+}
+
+
+@media all and (max-width :848px){
+	.gallarey-item {
+		width: 100%;
+		float: none;
+		padding:20px 0px;
+	}
+	.gallarey-section{
+		max-width:1000px;
+		overflow:inherit;
+		padding-bottom:500px;
+	}
+	
+	
+	.photo-thub {
+		width: 100%;
+		float: none;
+	}
+	.photo-text {
+		width: 100%;
+		float: none;
+		margin-right:0px;
+	}
+	.photo-section {
+		max-height: 647px;
+	}
+	.photo2-thub {
+		width: 100%;
+		float: none;
+	}
+	.photo2-thub img{
+		margin:auto;
+		display:block;
+	}
+	
+	.photo2-text {
+		width: 100%;
+		float: none;
+		padding:30px 0px;
+	}
+	.photo2-section {
+		max-height:950px;
+	}
+}
+
+
+
+@media all and (max-width :671px){
+	.header-section {
+		height: 850px;
+	}
+	.subscribe-btn {
+		width: 80%;
+		margin: 20px auto;
+	}
+	.download-content p {
+		width: 90%;
+		margin: auto;
+	}
+}
+@media all and (max-width :610px){
+	.left-widgets {
+		width: 100%;
+		float: none;
+		margin:10px auto;
+	}
+	.right-widgets {
+		width: 100%;
+		float: none;
+		margin:10px auto;
+	}
+	
+}
+
+
+@media all and (max-width :510px){
+	.download-btn a:first-child {
+		width:100px;
+		margin:10px auto;
+	}
+	.download-btn a:last-child {
+		width:100px;
+		margin:10px auto;
+	}
+	.fot-logo img{
+		display:block;
+		margin:auto;
+	}
+	.menu ul li {
+		display:block;
+	}
+	.menu ul li a .logo {
+		display:block;
+		margin:5px auto;
+	}
+	.menu{
+		padding-top:20px;
+	}
+	.gallarey-section{
+		max-width:1000px;
+		overflow:inherit;
+		padding-bottom:300px;
+	}
+	.header-section{
+		height:900px;
+	}
+	
+}
+
+@media all and (max-width :380px){
+	.header-content {
+		padding-top:200px;
+	}
+	.header-social {
+		padding-top:40px;
+	}
+	.header-section {
+		height: 730px;
+	}
+	.subscribe-btn {
+		width: 80%;
+		margin: 20px auto;
+	}
+	.header-section{
+		height:1000px;
+	}
+}
+
+@media all and (max-width :332px){
+	.header-content {
+		padding-top:250px;
+	}
+}

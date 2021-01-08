@@ -1,0 +1,585 @@
+/**************************************************************
+***************************************************************
+	
+	Template Name: Photo gallarey
+	Template URI: http://www.gointech.com
+	Description: photo related template
+	Author: Bakul Ray
+	Author URI: http://www.gaintech.com
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+
+*************************************************************
+*************************************************************
+
+	1. Typography
+	2. Header Section
+	3. Photo-Section
+	4. Photo2-Section
+	5. gallarey-section
+	6. Subcribe-Section
+	7. Download-Section
+	8. Footer-Section
+
+**************************************************************
+**************************************************************/
+
+
+/************** 1. Typography ************************/
+
+body, p {
+	font-family: 'JetBrains Mono', monospace;
+
+	font-size:14px;
+}
+
+h2 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 26px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color:#FFFFFF;
+}
+h3 {
+	color:#16a085;
+	font-family: 'Teko', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 1.3em;
+	letter-spacing: 1px;
+}
+a{
+	text-decoration:none; 
+	font-family: 'Roboto Slab', serif;
+	display:block;
+}
+img{
+	max-width:100%;
+}
+ul{
+	list-style:none;
+}
+
+
+
+
+
+
+/*************** 2. Header Area Style Start Form ***************/
+.header-section{
+	background-image:url('images/header-bg.jpg');
+	background-size:cover;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	height:600px;
+	text-align:center;
+}
+.header-section::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.container{
+	width:85%;
+	margin:auto;
+}
+
+/************ Menu Section Start Form Here ************/
+.menu ul li{
+	display:inline-block;
+}
+.menu ul li a {
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 10px 17px;
+}
+.menu ul li a:hover{
+	background:#e67e22;
+	color:#FFFFFF;
+	border-radius:3px;
+	padding: 10px 17px;
+}
+
+.menu ul li a .logo{
+	padding:0px 30px;
+}
+.menu ul li:nth-child(4) a{
+	background:none;
+}
+
+/********** header-content Start **********/
+.header-content{
+	padding-top:200px;
+}
+
+.header-content h2 {
+	font-size: 36px;
+	letter-spacing: 10px;
+	font-weight: 700;
+}
+.header-content p {
+	font-size: 18px;
+	font-weight: 700;
+	color: #FFFFFF;
+	padding: 10px 0px;
+}
+.header-content a {
+	background: #16a085;
+	color: #FFFFFF;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 26px auto;
+	position:relative;
+	z-index:1;
+}
+.header-content a::after{
+	content:'';
+	position:absolute;
+	left:0px;
+	top:0px;
+	height:100%;
+	width:0;
+	background:#e74c3c;
+	border-radius: 5px;
+	z-index:-1;
+	transition:.4s;
+}
+.header-content a:hover::after{
+	width:100%;
+}
+
+/*********** header-social Start Here ***********/
+.header-social {
+	padding-top: 75px;
+}
+.header-social li {
+	display: inline-block;
+	padding: 0px 5px;
+}
+
+.header-social li a i {
+    color: #FFFFFF;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #FFFFFF;
+}
+.header-social li a i:hover{
+	background:#e67e22;
+	color:#FFFFFF;
+	border:1px solid transparent;
+}
+
+
+
+/*********** Photo-Section Style Form Here ***********/
+.photo-section {
+	padding-top: 30px;
+	max-height: 350px;
+	overflow: hidden;
+	background:#f5f6f7;
+}
+.photo-section::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.photo-text{
+	width:40%;
+	float:left;
+	overflow:hidden;
+	margin-right:10%;
+}
+.photo-thub{
+	width:50%;
+	float:left;
+	overflow:hidden;
+}
+.photo-text h2 {
+	color: #1a887e;
+	font-size: 27px;
+	font-weight: 700;
+	text-transform: capitalize;
+	line-height: 36px;
+}
+.photo-text p {
+	color: #463636;
+	line-height: 21px;
+	padding: 10px 0px;
+	font-size: 15px;
+}
+
+.photo-text a {
+	background: #16a085;
+	color: #FFFFFF;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 26px auto;
+	position: relative;
+	z-index: 1;
+}
+.photo-text a::after{
+	content:'';
+	position:absolute;
+	left:0px;
+	top:0px;
+	height:100%;
+	width:0;
+	background:#e74c3c;
+	border-radius: 5px;
+	z-index:-1;
+	transition:.4s;
+}
+.photo-text a:hover::after{
+	width:100%;
+}
+
+/*********** Photo2-Section Style Form Here ***********/
+.photo2-section {
+	padding-top: 50px;
+	max-height: 350px;
+	overflow: hidden;
+	background:#FFFFFF;
+}
+.photo2-section::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.photo2-text{
+	width:40%;
+	float:left;
+	overflow:hidden;
+	margin-left:10%;
+}
+.photo2-thub{
+	width:50%;
+	float:left;
+	overflow:hidden;
+}
+.photo2-text h2 {
+	color: #21788c;
+	font-size: 27px;
+	font-weight: 700;
+	text-transform: capitalize;
+	line-height: 36px;
+}
+.photo2-text p {
+	color: #463636;
+	line-height: 21px;
+	padding: 10px 0px;
+	font-size: 15px;
+}
+
+.photo2-text a {
+	background: #16a085;
+	color: #FFFFFF;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 26px auto;
+	position: relative;
+	z-index: 1;
+}
+.photo2-text a::after{
+	content:'';
+	position:absolute;
+	left:0px;
+	top:0px;
+	height:100%;
+	width:0;
+	background:#e74c3c;
+	border-radius: 5px;
+	z-index:-1;
+	transition:.4s;
+}
+.photo2-text a:hover::after{
+	width:100%;
+}
+
+	
+/*********** Gallarey-Section Style Form Here ***********/
+.gallarey-section {
+	padding:60px;
+	max-height: 350px;
+	overflow: hidden;
+	background:#f5f6f7;
+}
+.gallarey-section::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.gallarey-item{
+	width:30%;
+	float:left;
+	overflow:hidden;
+	margin-right:2%;
+}
+.gallarey-item h2 {
+	color: #232323;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: capitalize;
+	line-height: 36px;
+	padding: 10px 0px;
+}
+.gallarey-item p {
+	color: #463636;
+	line-height: 21px;
+	padding: 10px 0px;
+	font-size: 15px;
+}
+.gallarey-item:first-child img{
+	margin:auto;
+	display:block;
+}
+.gallarey-item{
+	text-align:center; 
+}
+
+
+/*************** Subcribe-Section Start Form Here ***************/
+.subscribe-area{
+	background-image:url('images/subscribe-bg.jpg');
+	background-size:cover;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	height:400px;
+	text-align:center;
+}
+.subcribe-content{
+	padding:150px 0px;
+	text-align:center;
+}
+
+.subcribe-content h2 {
+	font-size: 30px;
+	font-weight: 700;
+	text-shadow: 2px 2px 2px #232323;
+}
+
+.subscribe-btn {
+	position: relative;
+	width: 20%;
+	margin: 20px auto;
+}
+
+.subscribe-btn input {
+	width: 100%;
+	display: block;
+	padding: 14px 20px;
+	border: 1px solid #fff;
+	background: #FFFFFF;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 500;
+}
+.subscribe-btn button {
+	display: block;
+	padding: 0px 17px;
+	border: 1px solid transparent;
+	background: #16a085;
+	position: absolute;
+	right: -42px;
+	top: 0px;
+	bottom: 0px;
+	font-size: 30px;
+	color: #FFFFFF;
+	cursor: pointer;
+	border-radius: 0px 5px 5px 0px;
+}
+.subscribe-btn button:hover{
+	background:#e67e22;
+}
+
+
+/*********** Download-Section Style Form Here ***********/
+.download-section {
+	background: #f5f6f7;
+	padding:50px 0px;
+	overflow: hidden;
+}
+.download-section::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.download-content{
+	text-align:center; 
+}
+
+.download-content h2 {
+	color: #232323;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 36px;
+	padding: 14px 0px;
+}
+.download-content p {
+	color: #463636;
+	line-height: 21px;
+	padding: 10px 0px;
+	font-size: 15px;
+	width: 60%;
+	margin: auto;
+}
+
+.download-btn{
+	padding-top:30px;
+}
+
+
+.download-btn a:first-child {
+	background: #1abc9c;
+	color: #FFFFFF;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 15px 106px 15px 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: relative;
+	font-family: FontAwesome;
+	margin-right: 2%;
+}
+
+.download-btn a:first-child::after {
+	content: "\f179";
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background: #16a085;
+	padding: 9px 14px;
+	font-size: 25px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+.download-btn a:last-child {
+	background: #1abc9c;
+	color: #FFFFFF;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 15px 106px 15px 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: relative;
+	font-family: FontAwesome;
+}
+
+.download-btn a:last-child::after {
+	content:"\f17b";
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background: #16a085;
+	padding: 9px 14px;
+	font-size: 25px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+
+
+/********** Footer-Section Start Form Here **********/
+.footer-area {
+	padding:20px 0px;
+}
+.footer-area::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.left-widgets{
+	width:70%;
+	float:left;
+	overflow:hidden;
+	margin-right:10%;
+}
+.right-widgets{
+	width:20%;
+	float:left;
+	overflow:hidden;
+}
+
+.fot-menu ul li{
+	display:inline-block;
+}
+.fot-menu ul li a {
+	padding: 5px 10px;
+	font-weight: 400;
+	text-transform: capitalize;
+	position:relative;
+	font-family: 'JetBrains Mono', monospace;
+
+}
+.fot-menu ul li a::after {
+	content: '';
+	position: absolute;
+	right: 0px;
+	top: 7px;
+	background: #2c9595;
+	height: 13px;
+	width: 1px;
+}
+.fot-menu ul li:last-child a::after{
+	width:0px;
+}
+
+
+.copyright p {
+	font-size: 14px;
+	padding: 10px 0px;
+	color: #736767;
+}
+
+.photo2-text h2 {
+	color: #21788c;
+	font-size: 27px;
+	font-weight: 700;
+	text-transform: capitalize;
+	line-height: 36px;
+}
+.photo2-text p {
+	color: #463636;
+	line-height: 21px;
+	padding: 10px 0px;
+	font-size: 15px;
+}
+
+/* 
+=============================
+All Style  End Form Here
+=============================
+ */
+
+
+
+
+
+
+
+
+
+
+
+
